@@ -1,0 +1,33 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.noActionBar" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="EditText">
+        <item name="android:background">@drawable/shape_white</item>
+        <item name="android:fontFamily">@font/open_sans_light_italic</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="EditText.text">
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="EditText.number">
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="EditText.email">
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+</resources>

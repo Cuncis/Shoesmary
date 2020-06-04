@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo_toolbar"/>
+
+            <ImageView
+                android:id="@+id/menu_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_menu_black_24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="37dp"/>
+
+            <ImageView
+                android:id="@+id/menu_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_shopping_cart_black_24dp"
+                android:layout_toStartOf="@+id/menu_filter"
+                android:layout_marginEnd="27dp"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+</RelativeLayout>

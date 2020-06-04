@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_cart"
+    app:startDestination="@id/cartFragment">
+
+<!--    <fragment-->
+<!--        android:id="@+id/cartFragment"-->
+<!--        android:name="com.cuncis.shoesmary.ui.cart.CartFragment"-->
+<!--        android:label="fragment_cart"-->
+<!--        tools:layout="@layout/fragment_cart" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_cartFragment_to_shippingFragment"-->
+<!--            app:destination="@id/shippingFragment" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/paymentFragment"-->
+<!--        android:name="com.cuncis.shoesmary.ui.cart.PaymentFragment"-->
+<!--        android:label="fragment_payment"-->
+<!--        tools:layout="@layout/fragment_payment" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_paymentFragment_to_shippingFragment2"-->
+<!--            app:destination="@id/shippingFragment"-->
+<!--            app:popUpTo="@id/shippingFragment"-->
+<!--            app:popUpToInclusive="true"/>-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/shippingFragment"-->
+<!--        android:name="com.cuncis.shoesmary.ui.cart.ShippingFragment"-->
+<!--        android:label="fragment_shipping"-->
+<!--        tools:layout="@layout/fragment_shipping" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_shippingFragment_to_paymentFragment"-->
+<!--            app:destination="@id/paymentFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_shippingFragment_to_cartFragment"-->
+<!--            app:destination="@id/cartFragment" />-->
+<!--    </fragment>-->
+    <fragment android:id="@+id/cartFragment"
+        android:name="com.cuncis.shoesmary.ui.cart.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/action_cartFragment_to_shippingFragment"
+            app:destination="@id/shippingFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/shippingFragment"
+        android:name="com.cuncis.shoesmary.ui.cart.ShippingFragment"
+        android:label="Shipping"
+        tools:layout="@layout/fragment_shipping">
+        <action
+            android:id="@+id/action_shippingFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/paymentFragment"
+        android:name="com.cuncis.shoesmary.ui.cart.PaymentFragment"
+        android:label="Payment"
+        tools:layout="@layout/fragment_payment"/>
+</navigation>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Shoesmary</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sample_adidas_falcon_textured">Adidas Falcon Textured</string>
+    <string name="sample_quantity_1_pcs">Quantity: 1 pcs</string>
+    <string name="go_to_payment">Go To Payment</string>
+    <string name="text_desc1">Surya Setiawan Luna.ftrsm@anrch.fgh; + 32 000 000 000 Lípová 1468/7, 120 000, Prague, Czech Republic;</string>
+    <string name="edit">Edit</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="all">All</string>
+    <string name="keranjang_anda_kosong">Keranjang Anda Kosong</string>
+</resources>

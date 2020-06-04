@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.cart.PaymentFragment">
+
+    <include
+        android:id="@+id/includeDetail"
+        layout="@layout/layout_payment_detail" />
+
+    <include
+        android:id="@+id/includePaymentDetail"
+        layout="@layout/layout_shipping_item" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPayNow"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/pay_now"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shape_pink"/>
+
+</LinearLayout>
